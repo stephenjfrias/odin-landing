@@ -93,3 +93,19 @@ button a {
     text-decoration: none;
     color: #E5E7EB;
 }
+
+.random-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.random-info .main-text {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.reasons {
+    display: flex;
+    flex: 1;
+}

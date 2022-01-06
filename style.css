@@ -1,111 +1,160 @@
 * {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-header, footer{
-    background-color: #1F2937;
-    padding: 18px 32px;
+header {
     display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    background-color: #1F2937;
 }
-
 footer {
-    color: #E5E7EB;
-    font-size: 12px;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-
-a {
-    cursor: pointer;
-}
-
-.header-left {
-    font-size: 24px;
-    color: #F9FAF8;
-    flex: 1 1 auto;
     align-items: center;
-    justify-content: flex-start;
+    font-size: 75%;
+    color: #999999;
+    background-color: #1F2937;
+    padding: 20px 50px;
 }
-
-.header-right {
-    font-size: 18px;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 18px;
-}
-
-.header-right a {
+header a {
     text-decoration: none;
+    font-size: 18px;
     color: #E5E7EB;
 }
-
+.header-left {
+    flex: 1 1 auto;
+    white-space: nowrap;
+}
+.header-left img {
+    object-fit: cover;
+    width: 75px;
+    height: 50px;
+}
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
 .hero {
     display: flex;
-    height: 50vh;
-}
-
-.hero-left, .hero-right {
     background-color: #1F2937;
-    color: #E5E7EB;
-    padding: 32px;
+    padding: 50px;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
-
 .hero-left {
     display: flex;
+    flex-flow: column wrap;
     flex: 1;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 8px;
+    gap: 15px;
+    width: 640px;
 }
-
-.hero-right {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.hero-right img {
-    object-fit: contain;
-}
-
-.hero .hero-left .main-text {
-    font-size: 48px;
+.hero-left .main-text {
+    font-size: 36px;
     font-weight: bold;
     color: #F9FAF8;
 }
-
+.sub-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
 button {
     padding: 8px 24px;
     border-radius: 8px;
-    background-color: #3882F6;
-    color: #E5E7EB;
+    background-color: #E5E7EB;
     border-style: none;
 }
-
 button a {
+    color: #1F2937;
     text-decoration: none;
-    color: #E5E7EB;
 }
-
-.random-info {
+.hero-right {
+    flex: 1;
+    display: flex;
+    min-width: 300px;
+} 
+.hero-right img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+.image {
+    height: auto;
+}
+.information {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+    gap: 24px;
 }
-
-.random-info .main-text {
-    font-size: 36px;
-    font-weight: bolder;
+.information .main-text {
+    font-size: 24px;
+    font-weight: bold;
     color: #1F2937;
+    text-align: center;
 }
-
-.reasons {
+.information .reasons {
     display: flex;
-    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 24px;
+}
+.information .reasons .item img {
+    object-fit: contain;
+    width: 200px;
+    height: 110px;
+    border: 2px solid #555;
+    border-radius: 8px;
+}
+.information .reasons .item .text{
+    width: 200px;
+    margin: auto;
+}
+.quote-bg {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.quote-bg .one,
+.quote-bg .two {
+    width: 200px;
+}
+@media only screen and (max-width: 700px) {
+    .quote-bg .one,
+    .quote-bg .two {
+        width: 20px;
+}
+  }
+.quote {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #E5E7EB;
+    padding: 20px 50px;
+    flex: 2;
+}
+.quote .left {
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    padding-bottom: 15px;
+}
+.quote .right {
+    text-align: right;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
 }
